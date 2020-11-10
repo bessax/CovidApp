@@ -1,0 +1,6 @@
+function voltartela() {
+    cidadeselecionada = [];
+
+    backPage('');
+}
+

@@ -1,0 +1,94 @@
+<div data="cidadeselecionada" class="page">
+    <div class="header blue-grey">
+
+        <button class="left icon ion-arrow-left-c" onclick="voltartelacidades()" name="button"></button>
+
+        <h1>${city}</h1>
+    </div>
+    <div data="cidadeselecionada" class="has-header content">
+
+        <div class="blue-grey padding">
+            <ul class="chart-bar line-white text-light text-small">
+                <li>
+                    <span id="casosconfirmados" class="orange-300 opacity-60 shadow radius-top animate__animated animate__fadeIn" style="height:75%"
+                        title='${confirmed}'></span>
+                    <div class="text-bold">Casos Confirmados</div>
+                </li>
+                <li>
+                    <span id="mortes" class="red opacity-60 shadow radius-top animate__animated animate__fadeIn" style="height:25%"
+                        title='${deaths}'></span>
+                    <div class="text-bold">Mortes</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="padding">
+            <ul class="chart-bar no-line right size-2 animate__animated animate__fadeInUp">
+                <li>
+                    <span class="grey opacity-60" style="height:55%"></span>
+                </li>
+                <li>
+                    <span class="grey opacity-60" style="height:20%"></span>
+                </li>
+                <li>
+                    <span class="grey opacity-60" style="height:35%"></span>
+                </li>
+                <li>
+                    <span class="blue-grey" style="height:80%"></span>
+                </li>
+                <li>
+                    <span class="grey opacity-60" style="height:50%"></span>
+                </li>
+                <li>
+                    <span class="grey opacity-60" style="height:70%"></span>
+                </li>
+                <li>
+                    <span class="grey opacity-60" style="height:40%"></span>
+                </li>
+            </ul>
+            <p class="text-light">POPULAÇÃO ESTIMADA</p>
+            <h1 class="text-huge text-bold animate__animated animate__fadeIn">${estimated_population}</h1>
+        </div>
+        <div class="line grey-300"></div>
+        <div class="padding">
+            <ul class="chart-bar no-line right size-2 animate__animated animate__fadeInUp">
+                <li>
+                    <span class="grey opacity-60" style="height:55%"></span>
+                </li>
+                <li>
+                    <span class="grey opacity-60" style="height:65%"></span>
+                </li>
+                <li>
+                    <span class="grey opacity-60" style="height:57%"></span>
+                </li>
+                <li>
+                    <span class="red" style="height:59%"></span>
+                </li>
+                <li>
+                    <span class="grey opacity-60" style="height:69%"></span>
+                </li>
+                <li>
+                    <span class="grey opacity-60" style="height:32%"></span>
+                </li>
+                <li>
+                    <span class="grey opacity-60" style="height:46%"></span>
+                </li>
+            </ul>
+            <p class="text-light">TAXA MORTALIDADE</p>
+            <h1 class="text-huge text-bold animate__animated animate__fadeIn">${death_rate}%</h1>
+        </div>
+        <div class="line grey-300"></div>
+        <div class="list no-border">
+            <div class="item">
+                <div class="left">
+                    <h2>Última atualização</h2>
+                </div>
+                
+                <div class="right">
+                    <h2>${date}</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
